@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import lombok.Builder;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -17,6 +18,8 @@ public class Person{
 
     @Id
     private String personId;
+
+//    @Indexed(unique = true)
     private String firstName;
     private String lastName;
     private Integer age;

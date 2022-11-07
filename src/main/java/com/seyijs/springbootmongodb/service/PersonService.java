@@ -21,4 +21,6 @@ public interface PersonService {
 
 
     List<Document> getOldestPersonInCityByAge();
+
+    List<Document> getPopulationByCity();
 }
