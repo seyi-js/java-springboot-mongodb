@@ -14,7 +14,7 @@ public class SpringbootMongodbApplication {
 
 		Dotenv dotenv = Dotenv.configure().directory("./java-mongodb-restapi").systemProperties().load();
 
-		System.out.println(dotenv.get("MONGODB_URI"));
+
 
 		SpringApplication.run(SpringbootMongodbApplication.class, args);
 	}
